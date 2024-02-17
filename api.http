@@ -1,3 +1,4 @@
+### Create user
 POST http://localhost:8080/create
 Content-Type: application/json
 
@@ -6,3 +7,19 @@ Content-Type: application/json
     "email": "usuario@gmail.com",
     "password": "1234"
 }
+
+### Get all users
+GET http://localhost:8080/
+
+### Update user by id
+PUT http://localhost:8080/id/65ca825bcdc92ff00ed60758
+Content-Type: application/json
+
+{
+    "username": "usuario1",
+    "email": "usuario1@gmail.com",
+    "password": "4321"
+}
+
+### DELETE user
+DELETE http://localhost:8080/id/65cbe06cd761da36a2af81ec
